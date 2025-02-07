@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <h1>Mi Portafolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre-mi" class="section">
+            <img src="/assets/CV2.png" alt="Foto de Gonzalo Paz" class="foto-cv">
+            <h2>Sobre mí</h2>
+            <p>Mi nombre es Gonzalo Paz, tengo 23 años y soy un Full Stack Developer JR ubicado en la ciudad de Cordoba, Argentina. <br>
+                 Un desarrollador apasionado en busca de adquirir nuevos conocimientos y experiencias en el mundo del desarrollo.</p>
+                <p>Me centro en el desarrollo de APIs web utilizando ASP.NET y ASP.NET Core con C#, integrandas con bases de datos SQL Server. He realizado proyectos personales y para el cursado 
+                    de mi carrera de Analista de Sistemas,trabajando solo y en equipo, creando soluciones de software para el mercado y de uso particular.
+                </p>
+
+                <!-- Seccion de  Skills -->
+    <div class="about__content-skills">
+    <h3 class="about__content-title">Skills</h3>
+    <div class="skills" id="skills-container">
+        <div class="skills__skill"> ASP.NET Core <i class="fas fa-code"></i> </div>
+        <div class="skills__skill"> ASP.NET <i class="fas fa-code"></i> </div>
+        <div class="skills__skill"> C# <i class="fas fa-code"></i> </div>
+        <div class="skills__skill">SQLServer/MySQL <i class="fas fa-database"></i> </div>
+        <div class="skills__skill">Postman/Swagger <i class="fas fa-cogs"></i> </div>
+        <div class="skills__skill">GitHub <i class="fab fa-github"></i> </div>
+        <div class="skills__skill">Git <i class="fab fa-git-alt"></i> </div>
+        <div class="skills__skill">JavaScript <i class="fab fa-js"></i> </div>
+        <div class="skills__skill"> HTML <i class="fab fa-html5"></i> </div>
+        <div class="skills__skill">CSS <i class="fab fa-css3-alt"></i> </div>
+        <div class="skills__skill">React <i class="fab fa-react"></i> </div>
+        <div class="skills__skill">Bootstrap <i class="fab fa-bootstrap"></i> </div>
+    </div>
+</div>
+
+
+       <!-- Sección de Proyectos -->
+       <section id="proyectos" class="section">
+        <h2>Mis Proyectos</h2>
+        <div class="proyectos-container">
+            <div class="proyecto-card">
+                <img src="/assets/ticketssalesapp.jpg" alt="Vista previa de Tickets Sales App" class="proyecto-img" onclick="window.open('https://github.com/Gonzawk/TicketsSales.git', '_blank')">
+                <h3>Tickets Sales App</h3>
+                <p><b>Tickets Sales</b> es un sistema para venta de entradas basico.  </p>
+                <a href="https://github.com/Gonzawk/TicketsSales.git" class="proyecto-link" target="_blank">Ver Proyecto</a>
+            </div>
+            
+            <div class="proyecto-card">
+                <img src="/assets/SNKApp.jpg" alt="Vista previa del proyecto 2" class="proyecto-img" onclick="window.open('https://proyecto2.com', '_blank')">
+                <h3>SNK App</h3>
+                <p><b>SNK App</b> es una aplicacion de uso particular, para 
+                    la gestion de un negocio de venta de zapatillas.</p>
+                <a href="https://proyecto2.com" class="proyecto-link" target="_blank">Ver Proyecto</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sección de Contacto -->
+<section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <form>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <!-- Redes Sociales -->
+    <div class="main-footer__row main-footer__row-1">
+        <h2 class="heading heading-sm main-footer__heading-sm">
+            <span>Social</span>
+        </h2>
+        <div class="main-footer__social-cont">
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/gonzalodpaz/">
+                <img class="main-footer__icon" src="./assets/ico/linkedin-ico.png" alt="LinkedIn">
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/Gonzawk">
+                <img class="main-footer__icon" src="./assets/ico/github-ico.png" alt="GitHub">
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://x.com/Gonza77_">
+                <img class="main-footer__icon" src="./assets/ico/twitter-ico.png" alt="Twitter">
+            </a>
+            <a target="_blank" rel="noreferrer" href="#">
+                <img class="main-footer__icon" src="./assets/ico/yt-ico.png" alt="YouTube">
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/gonzapaz14/">
+                <img class="main-footer__icon main-footer__icon--mr-none" src="./assets/ico/insta-ico.png" alt="Instagram">
+            </a>
+        </div>
+    </div>
+</section>
+
+    </main>
+    <footer>
+        <p>&copy;GonzaDev - 2025 Mi Portafolio   <br> Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
+
