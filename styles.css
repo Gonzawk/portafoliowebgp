@@ -139,10 +139,21 @@ html {
     margin: 0 auto 10px; /* Centra la imagen y deja un margen abajo */
 }
 
+/* Estilo general para .about__content-skills */
 .about__content-skills {
     text-align: center; /* Centra el título */
-    margin-top: 20px;
+    margin-top: 60px; /* Margen superior solo en pantallas grandes */
+    margin-bottom: 120px; /* Margen inferior solo en pantallas grandes */
 }
+
+/* Media query para pantallas pequeñas (celulares) */
+@media (max-width: 600px) {
+    .about__content-skills {
+        margin-top: 0; /* Elimina el margen superior en pantallas pequeñas */
+        margin-bottom: 0; /* Elimina el margen inferior en pantallas pequeñas */
+    }
+}
+
 
 .about__content-title {
     font-size: 22px;
@@ -159,7 +170,10 @@ html {
     gap: 12px;
     max-width: 800px; /* Ajusta el ancho para que no se vea demasiado extendido */
     margin: 0 auto; /* Centra el contenedor */
+
 }
+
+
 
 .skills__skill {
     background: #f3f3f3;
@@ -238,7 +252,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 500px;
+    max-width: 900px;
     margin: auto;
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
@@ -247,7 +261,7 @@ form {
 
 input, textarea {
     width: 90%;
-    max-width: 400px;
+    max-width: 800px;
     padding: 10px;
     margin-top: 10px;
     border: none;
@@ -301,7 +315,8 @@ html {
 
 /* Estilos para las redes sociales */
 .main-footer__row {
-    margin-top: 40px;
+    margin-top: 80px;
+    margin-bottom: 0px;
     text-align: center;
 }
 
@@ -339,4 +354,45 @@ html {
         width: 35px;
         height: 35px;
     }
+}
+
+
+#proyectos {
+    margin-top: 220px;
+    margin-bottom: 160px;
+}
+
+/* Media Query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    #proyectos {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+/* Información de contacto */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.contact-item i {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #ff4081; /* Color del icono */
+}
+
+.contact-item span {
+    font-weight: bold;
 }
